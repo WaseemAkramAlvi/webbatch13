@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Huzaifa Tajammal | Profile</title>
+	<style>
+		:root {
+			--ink: #17212b;
+			--muted: #61707d;
+			--accent: #ef8354;
+			--accent-dark: #c95c32;
+			--paper: #fffaf4;
+			--line: #eadfd3;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			margin: 0;
+			color: var(--ink);
+			background: linear-gradient(135deg, #f7eee5 0%, #fffaf4 50%, #e8f3f0 100%);
+			font-family: Georgia, "Times New Roman", serif;
+		}
+
+		.page {
+			width: min(920px, calc(100% - 32px));
+			margin: 48px auto;
+		}
+
+		header, section {
+			background: rgba(255, 250, 244, 0.9);
+			border: 1px solid var(--line);
+			box-shadow: 0 14px 34px rgba(75, 57, 43, 0.08);
+		}
+
+		header {
+			display: grid;
+			grid-template-columns: 1fr auto;
+			gap: 24px;
+			align-items: center;
+			padding: 48px;
+			border-top: 7px solid var(--accent);
+		}
+
+		.eyebrow {
+			margin: 0 0 10px;
+			color: var(--accent-dark);
+			font: 700 0.78rem/1.2 Arial, sans-serif;
+			letter-spacing: 0.16em;
+			text-transform: uppercase;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: clamp(2.4rem, 7vw, 5rem);
+			line-height: 0.95;
+		}
+
+		.intro {
+			max-width: 570px;
+			margin: 20px 0 0;
+			color: var(--muted);
+			font-size: 1.12rem;
+			line-height: 1.65;
+		}
+
+		.badge {
+			display: grid;
+			place-items: center;
+			width: 124px;
+			height: 124px;
+			border-radius: 50%;
+			color: #fffaf4;
+			background: var(--accent);
+			font-size: 2.5rem;
+			font-weight: 700;
+		}
+
+		.content {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 18px;
+			margin-top: 18px;
+		}
+
+		section { padding: 28px; }
+		h2 { margin: 0 0 18px; font-size: 1.35rem; }
+		p { color: var(--muted); line-height: 1.6; }
+
+		.skills {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			padding: 0;
+			list-style: none;
+		}
+
+		.skills li {
+			padding: 8px 12px;
+			color: var(--accent-dark);
+			border: 1px solid #f0b59a;
+			border-radius: 999px;
+			font: 700 0.82rem Arial, sans-serif;
+		}
+
+		.project { padding: 14px 0; border-top: 1px solid var(--line); }
+		.project:first-of-type { padding-top: 0; border-top: 0; }
+		.project strong { font-size: 1.05rem; }
+		.project p { margin: 6px 0 0; }
+
+		.contact a {
+			color: var(--accent-dark);
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		footer {
+			padding: 22px 0;
+			color: var(--muted);
+			text-align: center;
+			font: 0.78rem Arial, sans-serif;
+		}
+
+		@media (max-width: 640px) {
+			.page { margin: 20px auto; }
+			header { grid-template-columns: 1fr; padding: 32px 24px; }
+			.badge { width: 88px; height: 88px; font-size: 1.8rem; }
+			.content { grid-template-columns: 1fr; }
+			section { padding: 24px; }
+		}
+	</style>
+</head>
+<body>
+	<main class="page">
+		<header>
+			<div>
+				<p class="eyebrow">Personal profile</p>
+				<h1>Huzaifa<br>Tajammal</h1>
+				<p class="intro">A curious web learner building clean, useful and user-friendly digital experiences one project at a time.</p>
+			</div>
+			<div class="badge" aria-label="Huzaifa Tajammal initials">HT</div>
+		</header>
+
+		<div class="content">
+			<section>
+				<h2>About me</h2>
+				<p>I enjoy turning ideas into working websites and learning modern frontend techniques. My current focus is improving HTML, CSS and JavaScript through practical projects.</p>
+				<h2>Skills</h2>
+				<ul class="skills">
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>JavaScript</li>
+					<li>Responsive Design</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Recent projects</h2>
+				<div class="project">
+					<strong>Student Portfolio</strong>
+					<p>A responsive page for presenting education, skills and completed work.</p>
+				</div>
+				<div class="project">
+					<strong>Task Tracker</strong>
+					<p>A simple productivity interface for organizing daily tasks.</p>
+				</div>
+				<div class="project">
+					<strong>Product Landing Page</strong>
+					<p>A focused product layout with clear sections and mobile support.</p>
+				</div>
+			</section>
+
+			<section class="contact">
+				<h2>Contact</h2>
+				<p>Email: <a href="mailto:huzaifa.tajammal@example.com">huzaifa.tajammal@example.com</a></p>
+				<p>Location: Lahore, Pakistan</p>
+				<p>Availability: Open to learning and collaboration</p>
+			</section>
+		</div>
+
+		<footer>© 2026 Huzaifa Tajammal. Built with HTML and CSS.</footer>
+	</main>
+</body>
+</html>
